@@ -273,7 +273,7 @@ void loop() {
  
  //BC547
 
- if (digitalRead(soil)==0)
+ if (digitalRead(soil)==1)
  {
      lcd.clear();
      lcd.print("Low Soil Moisture.");
@@ -296,7 +296,7 @@ void loop() {
 
         
  }
- if (digitalRead(soil)==1)
+ if (digitalRead(soil)==0)
  {
      lcd.clear();
      lcd.print("Soil Moisture Normal.");
